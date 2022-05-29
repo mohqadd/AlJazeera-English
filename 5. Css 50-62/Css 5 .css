@@ -1,0 +1,742 @@
+/* دررس رقم #46 ↓ فيديو 50 (انشاء موقع ب html css || درس 1)  */
+/* مقدمة */
+/* دررس رقم #54 ↓ فيديو 58 (شرح media query) */ /* دررس رقم #55 ↓ فيديو 59 (شرح Media Query Screen) */  
+/* دررس رقم #56 ↓ فيديو 60 (طريقة تصميم موقع متجاوب مع جميع شاشات) */
+/* دررس رقم #57 ↓ فيديو 61 (Media Query : Landscape & portrait) */
+/* دررس رقم #58 ↓ فيديو 62 (شرح media query - print) */
+@media all {
+    /* دررس رقم #47 ↓ فيديو 51 (انشاء موقع ب html css || طريقة وضع لوغو + اسم موقع في موقعك)  */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* width: 1420px;*/
+    width: 1420px;
+    margin: auto;
+    background-color: #e0e2da;
+}
+/*#header1{
+    display:none;
+}*/
+header{
+    position: unset;
+    clear: both;
+    height: 90px;
+    width: 80%;
+    background: linear-gradient(to right, #e0e8ec, #f0edd9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: auto;
+    /*border-bottom: #ff0000 3px solid;*/
+}
+#logoBox{
+    width: 180px;
+    height: 100%;
+    float: left;
+    margin-left: 55px;
+    /*border-radius: 50%;*/
+}
+#h1header{
+    float: right;
+    padding-top: 25%;
+    line-height: 80px;
+    padding: 10px;
+
+}
+#img47{
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+/* دررس رقم #48 ↓ فيديو 52 (إنشاء قائمة منسدلة || navbar resposive)  */
+nav{
+    width: 100%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: #d4a450;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Amiri', serif;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    color: #d4a450;
+    text-align: center;
+}
+/*[href="5. Css 50-60.html"]{
+    display: none;
+}*/
+nav a:hover{
+    background-color: #c21833;
+    color: white;
+
+
+}
+#LIVE:hover{
+    height: 90px;
+    background-color: #c21833;
+    color: white;
+    border-radius: 0%;
+    /*transform: scale(1.1);*/
+}
+/* دررس رقم #49 ↓ فيديو 53 ( شرح animation css || إنشاء خلفيات متحركة احترافية)  */
+main{
+    width: 100%;
+    height: 1900px;
+    background-color: #dde2cf;
+    border-top: white 3px solid;
+    /*clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 100% 100%, 0 89%);*/
+    animation-name: changebackground;
+    animation-duration: 15s;
+    animation-iteration-count: infinite; /*لاستمرار الاختلاف اللوني */
+}
+@keyframes changebackground{
+    0%{
+        background-color: #dde2cf;
+    }
+    20%{
+        background-color: #e2dccf;
+    }
+    40%{
+        background-color: #cfdee2;
+    }
+    80%{
+        background-color: #cfd8e2;
+    }
+    100%{
+        background-color: #e2cfcf;
+    }
+}
+/* دررس رقم #50 ↓ فيديو 54 (إنشاء قسم الجانبي من الموقع بإحترافية) */
+aside{
+    width: 30%;
+    height: 1900px;
+    background-color: #f1f1c3;
+    float: left;
+    text-align: center;
+    
+}
+#img2019{
+    width: 90%;
+    text-align: center;
+    
+
+}
+#h2aside{
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    /*border-bottom: 2px solid #c21833;*/
+    color: black;
+}
+#h2aside:hover{
+    text-decoration: none   rgb(0, 0, 0) ;
+    color: rgb(10, 28, 131);
+
+}
+/* دررس رقم #51 ↓ فيديو 55 (إضافة محتوى بإحترافية عبر css للملف HTML)  */
+#article1{
+    width: 70%;
+    height: 355px;
+    position: relative;
+    float: right;
+    margin-bottom: 20px;
+}
+
+#box{
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    background-color: #c21833;
+    margin-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*text-align: center;*/
+}
+#boxh1{
+    color: white;
+    border-bottom: 3px solid white;
+    padding: 15px 0;
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    padding-top: 3px;
+}
+#boxh3{
+    width: 90%;
+    text-align: justify;
+    color: white;
+    padding: 15px 0;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-top: 3px;
+    float: left;
+}
+#boxh33{
+        width: 90%;
+        text-align: justify;
+        color: white;
+        padding-left: 20px;
+        float: left;
+}
+/*#ligg{
+    width: 90%;
+    text-align: justify;
+    color: white;
+    padding-left: 20px;
+    padding-top: 6px;
+    float: left;
+}*/
+/*#asideid{
+    width: 17%;
+    background-color: #d4a450;
+    float: right;
+    height: 620px;
+    margin-right: 40px;
+    position: fixed;
+    top: 12.4%; right: 0%; /* التحكم في الاتجاه 
+}*/
+#divid{
+    position: fixed;
+    bottom: 0%;
+    color: white;
+}
+#divid1{
+    position: fixed;
+    bottom: 0%;
+    color: #d6152f;
+    float: right;
+    clear: both;
+    bottom: 4px; right: 0%; /* التحكم في الاتجاه */
+    margin-top: 10px;
+}
+/* دررس رقم #52 ↓ فيديو 56 (إضافة محتوى بإحترافية عبر css للملف HTML)  */
+#footer1{
+    height: 500px;
+    width: 100%;
+    background-color: #c2c2c2;
+}
+#footer2{
+    height: 100px;
+    width: 100%;
+    background-color: #d8d8d8;
+    clear: both;
+}
+#contact{
+    width: 100%;
+    /*display: flex;*/
+    justify-content: center;
+    text-align: center;
+
+}
+#contact img{
+    width: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 13px;
+/* دررس رقم #53 ↓ فيديو 57*/
+    /*padding-bottom: 5px;
+    border-bottom: 2px solid #c21833;*/
+    text-align: center;
+}
+#contact img:hover{
+    width: 45px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c21833;
+}
+}
+@media only screen and (min-width:280px) and (max-width:800px) {
+    body{
+        width: 390px;
+    }
+    header{
+        width: 390px;
+        height: 80px;
+        text-align: center;
+
+    }
+    #logoBox{
+        width: 30px;
+        height: 100%;
+        float: left;
+        margin-left: -10px;
+        margin-right: 40px;
+        /*border-radius: 50%;*/
+
+    }
+    #h1header{
+        display: none;
+    }
+
+    #img47{
+        padding-left:25px;
+        padding-top: 9px;
+        padding-bottom: 5px;
+        width: 30px;
+        float: left;
+    }
+    #liheader{
+        width: 80px;
+        padding-left: 0px;
+        padding-top: 0px;
+        float: left;
+        line-height: 30px;
+
+    }
+
+    #LIVE:hover{
+        height: 30px;
+        background-color: #c21833;
+        color: white;
+        border-radius: 0%;
+    }
+    #nav1{
+        padding-top: 10px;
+    }
+    
+    /*[href="https://www.aljazeera.com/live"]{
+        display: none;
+    }
+    [href="https://www.aljazeera.com/features/"]{
+        display: none;
+    }
+    /*[href="https://www.aljazeera.com/tag/ukraine-russia-crisis/"]{
+        display: none;
+    }*/
+
+    [href="https://www.aljazeera.com/videos/"][ href="https://www.aljazeera.com/live"]{
+        padding-top: -30px!important;
+        padding-left: -30px!important;
+        line-height: 20px;
+    }
+    #header1{
+        display: block;
+    }
+    main{
+        height: 3000px;
+        margin-top: 0px;
+    }
+    aside{
+        width: 390px;
+        height: 630px;
+        background-color: #f1f1c3;
+        text-align: center;
+        padding-top: 10px;
+    }
+    #img2019{
+        width: 40%;
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-left: 4.5px;
+        float: left;
+    }
+    #h2aside{
+        width: 90%;
+        text-align: start;
+        margin-left: 5px;
+        /*border-bottom: 2px solid #c21833;*/
+        color: black;
+    }
+    #article1{
+        width: 390px;
+        height: 500px;
+        position: relative;
+        float: right;
+        margin-bottom: 20px;
+    }
+    #box{
+        position: absolute;
+        width: 390px;
+        height: 500px;
+        background-color: #c21833;
+        margin-top: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*text-align: center;*/
+    }
+    #boxh1{
+        color: white;
+        border-bottom: 3px solid white;
+        padding: 15px 0;
+        padding: 10px;
+        padding-left: 15px;
+        margin-top: 10px;
+        padding-top: 3px;
+    }
+    #boxh3{
+        width: 90%;
+        text-align: justify;
+        color: white;
+        padding: 15px 0;
+        padding: 10px;
+        padding-left: 20px;
+        margin-top: 20px;
+        padding-top: 3px;
+        float: left;
+    }
+    #boxh33{
+            width: 90%;
+            text-align: justify;
+            color: white;
+            padding-left: 20px;
+            float: left;
+    }
+    #asideid{
+        width: 17%;
+        background-color: #d4a450;
+        float: right;
+        height: 620px;
+        margin-right: 40px;
+        position: fixed;
+        top: 12.4%; right: 0%; /* التحكم في الاتجاه */
+    }
+    #divid{
+        bottom: 0%;
+        color: white;
+    }
+    #article1a{
+        position: fixed;
+        bottom: 5%;
+        right: 0%;
+    }
+    #marquee{
+        width: 390px;
+    }
+    #divid1{
+        display:none;
+    }
+    #footer1{
+        height: 500px;
+        width: 100%;
+        background-color: #c2c2c2;
+    }
+    #footer2{
+        height: 100px;
+        width: 100%;
+        background-color: #d8d8d8;
+        clear: both;
+    }
+
+}
+@media only screen and (orientation:landscape) and ( min-width:730px) and (max-width:1244px) /* لتطبيق خصائص السي اس اس في الوضع الافقي */  /*( min-width:730px) and (max-width:1244px)*/ /* portrait */{
+    body{
+        width: 730px;
+    }  
+    header{
+        width: 730px;
+        height: 50px;
+        text-align: center;
+
+    }
+    #logoBox{
+        width: 30px;
+        height: 100%;
+        float: left;
+        margin-left: -10px;
+        margin-right: 40px;
+        /*border-radius: 50%;*/
+
+    }
+    #h1header{
+        display: none;
+    }
+    #img47{
+        padding-left:30px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        width: 30px;
+        float: left;
+        width: 25px;
+    }
+    #liheader{
+        width: 80px;
+        padding-left: 0px;
+        padding-top: 0px;
+        float: left;
+        line-height: 35px;
+
+    }
+    #LIVE:hover{
+        height: 30px;
+        background-color: #c21833;
+        color: white;
+        border-radius: 0%;
+    }
+    #nav1{
+        padding-top: 10px;
+    } 
+    /*[href="https://www.aljazeera.com/live"]{
+        display: none;
+    }
+    [href="https://www.aljazeera.com/features/"]{
+        display: none;
+    }
+    /*[href="https://www.aljazeera.com/tag/ukraine-russia-crisis/"]{
+        display: none;
+    }*/
+
+    [href="https://www.aljazeera.com/videos/"][ href="https://www.aljazeera.com/live"]{
+        padding-top: -30px!important;
+        padding-left: -30px!important;
+        line-height: 20px;
+    }
+    #header1{
+        display: block;
+    }
+    main{
+        height: 2650px;
+        margin-top: 0px;
+    }
+    aside{
+        width: 330px;
+        height: 2600px;
+        background-color: #f1f1c3;
+        text-align: center;
+        padding-top: 10px;
+    }
+    #img2019{
+        width: 90%;
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-left: 15px;
+        float: left;
+    }
+    #h2aside{
+        width: 90%;
+        text-align: start;
+        margin-left: 5px;
+        /*border-bottom: 2px solid #c21833;*/
+        color: black;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #article1{
+        width: 390px;
+        height: 500px;
+        position: relative;
+        float: right;
+        margin-bottom: 20px;
+        
+    }
+    #box{
+        position: absolute;
+        width: 390px;
+        height: 500px;
+        background-color: #c21833;
+        margin-top: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*text-align: center;*/
+    }
+    #boxh1{
+        color: white;
+        border-bottom: 3px solid white;
+        padding: 15px 0;
+        padding: 10px;
+        padding-left: 15px;
+        margin-top: 10px;
+        padding-top: 3px;
+    }
+    #boxh3{
+        width: 90%;
+        text-align: justify;
+        color: white;
+        padding: 15px 0;
+        padding: 10px;
+        padding-left: 20px;
+        margin-top: 20px;
+        padding-top: 3px;
+        float: left;
+    }
+    #boxh33{
+            width: 90%;
+            text-align: justify;
+            color: white;
+            padding-left: 20px;
+            float: left;
+    }
+    #asideid{
+        width: 17%;
+        background-color: #d4a450;
+        float: right;
+        height: 620px;
+        margin-right: 40px;
+        position: fixed;
+        top: 12.4%; right: 0%; /* التحكم في الاتجاه */
+    }
+    #divid{
+        bottom: 0%;
+        color: white;
+    }
+    #article1a{
+        position: fixed;
+        bottom: 5%;
+        right: 0%;
+    }
+    #marquee{
+        width: 730px;
+    }
+    #divid1{
+        display:none;
+    }
+    #footer1{
+        height: 500px;
+        width: 100%;
+        background-color: #c2c2c2;
+    }
+    #footer2{
+        height: 100px;
+        width: 100%;
+        background-color: #d8d8d8;
+        clear: both;
+    }
+}
+@media print{
+        /*aside{
+            display: none;
+        }*/
+        header{
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+    }
+/*@media all {
+    
+}
+@media print{
+
+    }
+}
+@media only screen and (min-width:600px) and (max-width:2000px) {
+    #logoBox{
+        width: 30%;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
